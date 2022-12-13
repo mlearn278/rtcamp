@@ -17,7 +17,7 @@ class AutoSendingMail{
 // $mysqli=NEW MySQLi('localhost','root','','rtcamp');
 
 // Remote Database Connection
-$mysqli=NEW MySQLi('remotemysql.com','4wBXWo57I5','In5xZmaTxC','4wBXWo57I5');
+$mysqli=NEW MySQLi('localhost','root','','rtcamp');;
 $asm=new AutoSendingMail();
 $email=$mysqli->query("SELECT email FROM visitor_det WHERE action='start'");
 

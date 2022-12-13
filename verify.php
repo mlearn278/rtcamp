@@ -8,7 +8,7 @@ if(isset($_POST['verify']))
 // $mysqli=NEW MySQLi('localhost','root','','rtcamp');
 
 // Remote Database Connection
-$mysqli=NEW MySQLi('remotemysql.com','4wBXWo57I5','In5xZmaTxC','4wBXWo57I5');
+$mysqli=NEW MySQLi('localhost','root','','rtcamp');
   // Checking verification key.
   $query =$mysqli->query("SELECT `vkey` FROM `visitor_det`WHERE '$vkey' IN (`vkey`) LIMIT 1;");
 
